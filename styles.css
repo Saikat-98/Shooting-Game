@@ -10,6 +10,7 @@
 canvas {
     background-color: rgb(49, 49, 49);
     max-width: 100vw;
+    cursor: crosshair;
 }
 
 .scoreBoard {
@@ -69,4 +70,41 @@ form>select:hover {
 form>input:hover {
     background-color: rgb(194, 27, 91);
     box-shadow: 0 0 10px white;
+}
+
+.gameover {
+    background-color: rgba(122, 122, 122, 0.041);
+    border-radius: 5px;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameover>button {
+    padding: 1vmax;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    width: 10vw;
+    background-color: white;
+    font: 900 1.1vmax cursive;
+    transition: all 0.5s;
+}
+
+.gameover>button:hover {
+    background-color: rgb(30, 30, 34);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: white;
+}
+
+.gameover>div {
+    margin: 2vmax;
+    color: white;
+    font: 600 1.2vmax cursive;
 }
